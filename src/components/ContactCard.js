@@ -15,7 +15,7 @@ const  ContactCard =(props)=>{
                 <Row style={{fontSize:'15px'}}>
                 <p style={{textAlign:'center',margin:'0'}}>{name}</p>
                   <a href={`mailto:${email}`} target="_blank"><p style={{textAlign:'center', margin:'0'}}>{email}</p> </a>
-                  <p style={{textAlign:'center',margin:'0'}}>{number}</p>
+                  <a href={`tel:+91${number}`}><p style={{textAlign:'center',margin:'0'}}>{number}</p></a>
                  </Row>
                 </Col>
                 <Col className=" col-1 col-lg-2  mx-0 my-0 px-0 py-0" style={{fontSize:'20px'}}>
