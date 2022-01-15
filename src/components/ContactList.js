@@ -25,7 +25,7 @@ const  ContactList =(props)=>{
             <input className="form-control" type="text" placeholder="Search " aria-label="Search" value={props.term} onChange={getSearchTerm} ref={inputElement}/>
         </Row>
         <Row>
-            {props.contacts.length>0?renderContacts:<p style={{marginLeft:'9px'}}>No contacts available</p>}
+            {props.contacts.length>0?renderContacts:<p style={{marginLeft:'9px'}}>Loading.........</p>}
         </Row>
         </Container>
     );
